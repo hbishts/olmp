@@ -1,0 +1,800 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<title>Registration</title>
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/compiled.min.css" rel="stylesheet">
+<link href="css/mdb.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body class="hidden-sn mdb-skin-custom mdb-skin bg-skin-lp catalogue_bg" id="top-section">
+<header>
+  <div id="sidenav-overlay"></div>
+  <div id="mySidenav" class="sidenav custom-scrollbar"> <a href="javascript:void(0)" id="close-nav" class="closebtn">&times;</a>
+    <div class="menu"> <a href="">About us</a>
+     <a href="javascript:void(0)" data-target="#login" data-toggle="modal" data-dismiss="modal">Login</a>
+     <a href="">Sign up</a> <a href="">Track your Order</a> <a href="">RD Services Token (S)</a>
+     <a href="">Contact us</a>
+     <div class="small">
+     <a href=""><img src="img/fb.png" alt=""/></a>
+     <a href=""><img src="img/in.png" alt=""/></a>
+     <a href=""><img src="img/tw.png" alt=""/></a>
+     </div>
+    </div>
+    <div class="address">
+      <h4>Smart Chip Pvt. Ltd.</h4>
+      <p>D-216, Sector - 63<br>
+        Noida - 201301, Uttar Pradesh</p>
+      <p class="phone-number"> +91 120 4072 600</p>
+      <p class="fax-number">+91 120 4072 798</p>
+    </div>
+  </div>
+  <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav"> 
+    <!-- SideNav slide-out button -->
+    <div class="container"> 
+      
+      <!-- Breadcrumb-->
+      <div class="breadcrumb-dn mr-auto">
+        <p><a href="index.html"><img src="img/ot_morpho.png" width="173" height="20" alt=""/></a></p>
+      </div>
+      <ul class="nav navbar-nav nav-flex-icons ml-auto">
+        <li class="nav-item smooth-scroll"><a href="index.html" class="nav-link" style="color:rgba(63,102,171,1.00);">Home</a></li>
+        <li class="nav-item smooth-scroll"><a id="ankProduct" href="#" class="nav-link">Product</a></li>
+        <li class="nav-item smooth-scroll"><a id="ankServices" href="#our_services" class="nav-link">Services</a></li>
+        <li class="nav-item smooth-scroll"><a id="ankPartnership" href="#partnership" class="nav-link">Partnership</a></li>
+      </ul>
+      <div class="float-xs-right"> <a href="#" id="menu-show" class="button-collapse"><i class="fa fa-bars"></i></a> </div>
+    </div>
+  </nav>
+</header>
+<section id="main" class="product_section">
+  <div class="container content-3">
+    <h3 class="page_title">Registration</h3>
+    <div class="row" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
+      <div class="product-list col-lg-12">
+              <div class="tabs-wrap stepsform" id="aadhaar-div11">
+                <div class="tab-content pdng_zero">
+                  <div role="tabpanel" class="tab-pane active" id="EnterAadhaar">
+                    <div class="tab-body">
+                     <div class="row">
+                    <h4 class="col-sm-12 sub-heading">Personal Information</h4>
+                    <br>
+                    <div class="form-group mobile_no_wdth">
+                        <div class="md-form">
+                          <input type="text" id="form-contact-name" class="form-control">
+                          <label for="form-contact-name" class="">Mobile No. <span class="prom">*</span></label>
+                        </div>
+                      </div>
+                    <div class="form-group mobile_no_wdth">
+                      <button type="button" class="btn btn-info btn-rounded_main">Send OTP</button>
+                      </div>
+                    <div class="form-group mobile_no_wdth">
+                        <div class="md-form">
+                          <input type="text" id="form-contact-name" class="form-control" disabled maxlength="6">
+                          <label for="form-contact-name" class="">OTP <span class="prom">*</span>
+                          </label><a href="#" class="resend_otp">Resend OTP</a>
+                        </div>
+                      </div>
+                    <div class="form-group mobile_no_wdth">
+                      <button type="button" class="btn btn-green btn-rounded_main" disabled>Verify</button>
+                      </div>
+                      </div>
+                      <div class="row mb-5">
+                    
+                    <div class="form-group col-md-3">
+                      
+                        <div class="md-form">
+                          <input type="text" id="form-contact-name" class="form-control">
+                          <label for="form-contact-name">Name <span class="prom">*</span></label>
+                        </div>
+                      </div>
+                      
+                    <div class="form-group col-md-3">
+                        <div class="md-form">
+                          <input type="text" id="form-contact-name" class="form-control">
+                          <label for="form-contact-name" class="">Date of Birth <span class="prom">*</span></label>
+                        </div>
+                      </div>
+                      
+                      
+                      
+                      
+            <div class="form-group col-md-3">
+            <select class="mdb-select">
+    <option value="" disabled selected>Gender</option>
+    <option value="1">Male</option>
+    <option value="2">Female</option>
+    <option value="3">Transgender</option>
+</select>
+</div>
+ <div class="form-group col-md-3">
+                        <div class="md-form">
+                          <input type="text" id="form-aadhaar" class="form-control">
+                          <label for="form-aadhaar">Aadhaar<span class="prom">*</span></label>
+                        </div>
+                      </div>  
+                      <div class="form-group col-md-3">
+                        <select class="select mdb-select">
+                          <option value="KUA">KUA</option>
+                          <option value="1">01</option>
+                          <option value="2">02</option>
+                          <option value="3">03</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-3">
+                        <select class="select mdb-select">
+                          <option value="KUA">AUA</option>
+                          <option value="1">01</option>
+                          <option value="2">02</option>
+                          <option value="3">03</option>
+                        </select>
+                      </div> 
+                      
+                 
+    <div class="file-field col-md-3 form-group">
+        <div class="btn btn-blue-grey btn-sm btn-rounded_main choose_file">
+            <span>Choose file</span>
+            <input type="file">
+        </div>
+        <div class="file-path-wrapper">
+           <input class="file-path validate" type="text" placeholder="Upload Proof of ID">
+        </div>
+    </div>
+      
+                      
+                    </div>
+                    <div class="row mb-5">
+                    <h4 class="col-sm-12 sub-heading">Address</h4>
+                    <br>
+                    <div class="form-group col-md-3">
+                    <div class="md-form">
+                          <input type="text" id="form-contact-name" class="form-control">
+                          <label for="form-contact-name" class="">Address line 1 <span class="prom">*</span></label>
+                        </div>
+                      </div>
+                       <div class="form-group col-md-3">
+                        <div class="md-form">
+                          <input type="text" id="form-contact-name" class="form-control">
+                          <label for="form-contact-name" class="">Address line 2</label>
+                        </div>
+                      </div>
+                       <div class="form-group col-md-3">
+                        <div class="md-form">
+                          <input type="text" id="form-contact-name" class="form-control">
+                          <label for="form-contact-name" class="">Pincode <span class="prom">*</span></label>
+                        </div>
+                      </div>
+                     <div class="form-group col-md-3">
+                        <select class="select mdb-select">
+                          <option value="CA">Town/City 01</option>
+                          <option value="NV">Town/City 02</option>
+                          <option value="OR">Town/City 03</option>
+                          <option value="WA">Town/City 04</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-3">
+                        <select class="select mdb-select">
+                          <option value="CA" selected>District</option>
+                          <option value="NV">District 01</option>
+                          <option value="OR">District 02</option>
+                          <option value="WA">District 03</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-3">
+                        <select class="select mdb-select">
+                        <option disabled selected value="Select">State</option>
+                    <option  value="Andhra Pradesh">Andhra Pradesh </option>
+                    <option  value="Arunachal Pradesh">Arunachal Pradesh </option>
+                    <option  value="Assam">Assam </option>
+                    <option  value="Bihar">Bihar </option>
+                    <option  value="Chandigarh">Chandigarh </option>
+                    <option  value="Chhattisgarh">Chhattisgarh </option>
+                    <option  value="Dadra and Nagar Haveli">Dadra and Nagar Haveli </option>
+                    <option  value="Delhi">Delhi </option>
+                    <option  value="Goa">Goa </option>
+                    <option  value="Gujarat">Gujarat </option>
+                    <option  value="Haryana">Haryana </option>
+                    <option  value="Himachal Pradesh">Himachal Pradesh </option>
+                    <option  value="Jammu and Kashmir">Jammu and Kashmir </option>
+                    <option  value="Jharkhand">Jharkhand </option>
+                    <option  value="Karnataka">Karnataka </option>
+                    <option  value="Kerala">Kerala </option>
+                    <option  value="Lakshadweep">Lakshadweep </option>
+                    <option  value="Madhya Pradesh">Madhya Pradesh </option>
+                    <option  value="Maharashtra">Maharashtra </option>
+                    <option  value="Manipur">Manipur </option>
+                    <option  value="Meghalaya">Meghalaya </option>
+                    <option  value="Mizoram">Mizoram </option>
+                    <option  value="Nagaland">Nagaland </option>
+                    <option  value="Orissa">Orissa </option>
+                    <option  value="Pondicherry">Pondicherry </option>
+                    <option  value="Punjab">Punjab </option>
+                    <option  value="Rajasthan">Rajasthan </option>
+                    <option  value="Select">Sikkim </option>
+                    <option  value="Tamil Nadu">Tamil Nadu </option>
+                    <option  value="Tripura">Tripura </option>
+                    <option  value="Uttaranchal">Uttaranchal </option>
+                    <option  value="Uttar Pradesh">Uttar Pradesh </option>
+                    <option  value="West Bengal">West Bengal </option>
+                        </select>
+                      </div>
+                    <!--<div class="form-group col-md-6">
+                        <button class="btn-primary btn btn-rounded_main btn-primary waves-effect waves-light nxr_btn" data-toggle="tab" data-target="#PDetail" id="Next2">Next</button>
+                      </div>-->
+                    </div>
+                    <br>
+                   
+                  <!--<div class="tab-footer">
+                      <div class="tf-left">
+                        <div>
+                          <input type="checkbox" id="consent" checked>
+                          <label for="consent" style="margin-bottom: 0">I, the holder of above Aadhaar number, hereby give my consent to Smart Chip Private Limited
+                            to obtain demographic data with UIDAI</label>
+                        </div>
+                      </div>
+                      
+                    </div>-->
+                    <div class="row mb-5 row_details">
+                    <h4 class="col-sm-12 sub-heading">Device Detail</h4>
+                    <br>
+                  <div class="form-group col-md-3">
+                    <div class="md-form">
+                          <input type="text" id="form-contact-name" class="form-control">
+                          <label for="form-contact-name" class="">Product Serial No. <span class="prom">*</span></label>
+                        </div>
+                      </div>
+                  <div class="form-group col-md-3">
+                    <div class="md-form">
+                          <input type="text" id="form-contact-name" class="form-control">
+                          <label for="form-contact-name" class="">Date of Purchase (01/09/17) <span class="prom">*</span></label>
+                        </div>
+                      </div>
+                  <div class="form-group col-md-3">
+                    <div class="md-form">
+                          <input type="text" id="form-contact-name" class="form-control">
+                          <label for="form-contact-name" class="">Purchase from<span class="prom">*</span></label>
+                        </div>
+                      </div>
+                  <div class="form-group col-md-3">
+                    <div class="md-form">
+                          <input type="text" id="form-contact-name" class="form-control">
+                          <label for="form-contact-name" class="">Covered under AMC <span class="prom">*</span></label>
+                        </div>
+                      </div>    
+                <span class="add_details"><a href="javascript:void(0)" id="AddRow1"><i class="fa fa-plus"></i>Add Details</a></span>
+                  </div>
+                  </div>
+              
+                  <div class="tab-body">
+                  <div class="row">
+                   <div class="table-responsive">
+                  <table class="table-condensed table dependent">
+                    <tbody><tr>
+                      <th>Product Serial No.</th>
+                      <th>Date of purchase (01/09/17)</th>
+                      <th>Purchased from</th>
+                      <th colspan="2">Covered under AMC</th>
+                      </tr>
+                    <tr class="DependentRow">
+                      <td><input type="text" required=""></td>
+                    <td><input type="text" required=""></td>
+                     <td><input type="text" required=""></td>
+                      <td><input type="text" required=""></td>
+                     
+                    <td><a href="javascript:void(0)" class="delete" id="DeleteRow"><i class="fa fa-close"></i></a></td>
+                    </tr>
+                    <!--<tr>
+                      <td colspan="10" align="right"><a href="javascript:void(0)" id="AddRow"><i class="fa fa-plus"></i> Add Another</a></td>
+                    </tr>-->
+                  </tbody></table>
+                </div>
+             
+        
+                    
+                    <div class="clearfix"></div>
+             
+                    </div>
+                    <div class="tab-footer">
+                      <div class="tf-left">
+                        <div>
+                          <input type="checkbox" id="terms2" checked="">
+                          <label for="terms2">I acknowledge that I have read and accept the <a href="javascript:void(0)" data-target="#term" data-toggle="modal" data-dismiss="modal">Terms and Conditions</a> <span class="prom">*</span></label>
+                        </div>
+                      </div>
+                      <div class="tf-right">
+                 
+                        <a href="submit_page.html" class="btn-primary btn-primary btn text-uppercase btn-rounded_main btn-primary waves-effect waves-light">Submit</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+        
+        
+        
+        
+    
+</section>
+
+
+
+ 
+  
+  
+
+
+<div id="login" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-dialog-new"> 
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Login</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+            <div class="form-group">
+          <input type="text" class="form-control" placeholder="Mobile no. / Email ID">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Password">
+        </div>
+        
+           <div class="form-group">
+         <button class="btn text-uppercase btn-rounded_main btn-primary col-md-12" id="login-btn" data-dismiss="modal">Login</button>
+        
+   </div>
+        <div class="form-group" id="btns">
+          <aside class="not_sign_up"><a href="#">Not a member ? <span>Sign Up</span></a></aside>
+               <a href="" class="small forgot_password_btn">Forgot Password ?</a>
+          
+        </div>
+        
+     
+        <div class="clearfix"></div>
+        <hr>
+        <p class="text-center">Don’t want to create account?</p>
+        <a class="btn btn-primary btn-block text-uppercase btn-rounded_main" data-target="#guest-signup" data-toggle="modal" data-dismiss="modal">Continue as Guest</a> </div>
+    </div>
+  </div>
+</div>
+<div id="payment-method" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-dialog-new"> 
+  
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Choose Payment Method</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body"> <a href="" class="payment-logo"><img src="img/PayU-biz-logo.png"></a> <a  href="" class="payment-logo"><img src="img/instamojo.png"></a> </div>
+    </div>
+  </div>
+</div>
+<div id="guest-signup" class="modal fade" role="dialog">
+  <div class="modal-dialog"> 
+ 
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Continue as Guest</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="First Name">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Mobile No.">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Email ID">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Address line 1">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Address line 2">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Pincode">
+            </div>
+            <div class="col-md-6">
+              <select class="mdb-select">
+                <option selected>Districts</option>
+                <option>Aligarh</option>
+                <option>Barakhamba</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <select class="mdb-select">
+                <option selected>City</option>
+                <option >Almora</option>
+                 <option>Banglore</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <select class="mdb-select">
+                <option selected>State</option>
+                <option>Kerala</option>
+                <option>Uttarakhand</option>
+              </select>
+            </div>
+          </div>
+        </div>
+		  <div class="text-center form-group"><button class="btn btn-primary text-uppercase btn-rounded_main" id="proceed-btn" data-dismiss="modal">Continue</button></div>
+        <p class="text-center">Registered User? <a href="#" class="" data-target="#login" data-toggle="modal" data-dismiss="modal">Login</a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="address-change" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-dialog-new"> 
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Address Change </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="text-info">Shipping Address</p>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="First Name">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Mobile No.">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Email ID">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Address line 1">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Address line 2">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Pincode">
+            </div>
+            <div class="col-md-6">
+              <select class="mdb-select">
+                <option selected>Districts</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <select class="mdb-select">
+                <option selected>City</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <select class="mdb-select">
+                <option selected>State</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+              <p class="text-info">Billing Address</p>
+             
+             
+              <div class="form-group">
+                <div class="radio-button">
+                  <input type="radio" id="SameAddress" name="selector" checked>
+                  <label for="SameAddress">Same as Delivery Address</label>
+                  
+                </div>
+                <div class="radio-button">
+                  <input type="radio" id="NewAddress" name="selector" >
+                  <label for="NewAddress">New Billing Address</label>
+                  
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div id="billing-address" style="display: none;">
+                
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Mobile No.">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Email ID">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Address line 1">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Address line 2">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Pincode">
+            </div>
+            <div class="col-md-6">
+              <select class="mdb-select">
+                <option selected>Districts</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <select class="mdb-select">
+                <option selected>City</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <select class="mdb-select">
+                <option selected>State</option>
+              </select>
+            </div>
+          </div>
+        </div>
+                
+              </div>
+            
+        
+        
+<div class="text-center form-group"><button class="btn btn-primary text-uppercase btn-rounded_main" id="proceed-btn" data-dismiss="modal">Submit</button>
+</div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="pull-left">&copy; 2017 OLMP. All Rights Reserved.
+        </div>
+        <div class="col-md-6 right-links"> 
+<a href="FAQ.html" class="smooth-scroll">FAQ</a>
+<a href="privacy_policy.html" class="smooth-scroll">Privacy Policy</a> <a href="contactus.html" class="smooth-scroll">Contact us</a> </div>
+      </div>
+    </div>
+  </footer>
+<div id="term" class="modal fade" role="dialog" >
+    <div class="modal-dialog modal-dialog-new_03"> 
+   
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">Term &amp; Condition</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body scrll">
+
+<h5>1.	DEFINITIONS AND INTERPRETATION</h5>
+<p>1.1	Definitions</p>
+<p>(a)	Applicable law(s) means all laws, legislation, bye-laws, rules, regulations, directives, ordinances, judicial or quasi-judicial decrees or orders, injunctions, notifications, codes, policies, protocols, Approvals, judgments, treaties, brought into force and effect by any Governmental Authority from time to time, as may be applicable to the Terms and Conditions or the exercise, performance and discharge of the respective rights and obligations of the Parties hereunder, including the Information Technology Act, 2000, Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act, 2016 (“Aadhaar Act”); amendments thereof and notifications made thereunder.</p>
+
+<p>(b)	Deliverables means Aadhaar Registered Device Services for Legacy Devices / or Aadhaar L0/L1 compliant Registered Devices along with Associated Registered Device Services in Compliance to the Aadhaar Authentication API 2.0 and the Aadhaar Registered Devices Specifications Version2 Revision 1.</p>
+<p>(c)	Governmental Authority means any department, division or sub-division of the Government of India or of any state government and includes any commission, board, authority, agency or municipal and other local authority or statutory body including Panchayat, under the control of the Government of India or of any State, as the case may be, and having jurisdiction over the Parties and/or the subject matter of the Terms and Conditions.</p>
+<p>(d)	L0 device: A device is level 0 compliant if signing and encryption of biometric is implemented within the software zone at the host level. In this case the management of the private keys need to be addressed carefully to ensure it is protected from access by users for external applications within the OS. </p>
+<p>(e)	L1 device: A device is level 1 compliant if the signing and encryption of biometric is implemented within the trusted execution environment(TEE) where host OS processes or host OS users do not have any mechanism to obtain the private key or inject biometrics.</p>
+<p>(f)	Management Client means the component shared by the Device Provider, to be installed on every client device (compute device requesting Aadhaar Services) that shall enable the device to interact with the Management Server.</p>
+<p>(g)	Management Server means the Application Server hosted by the Device Provider that shall act as an Intermediary to the RD Server of the UIDAI, enabling the RD services. Management Server shall execute the Device Discovery, Registration and Key Rotation of the Devices.</p>
+<p>(h)	Purchaser Environment includes the Application, Database, hosting environment including the Hosting Hardware, System Software, Antivirus, Firewalls, Connectivity, the Client Machines, their system softwares and end point protection softwares such as antivirus, the client applications and the users of such applications.</p>
+<p>(i)	Purchaser Application refers to the application used by the Purchaser to access Aadhaar Services such as Aadhaar Authentication, KYC, or any other Aadhaar Services.</p>
+<p>(j)	Public Devices are biometric capture devices that provides Aadhaar-compliant biometric data to the application, which in turn encrypts the data before using it for authentication purposes</p>
+<p>(k)	Purchase Order means a commercial document offer issued by the Purchaser to the Device Provider, indicating types, quantities, and agreed prices for Registered Devices in (L0/ L1 configuation) and associated Registered Devices Services, delivered for the devices.</p>
+<p>(l)	Registered Device Service or RD Service means a service extended by the Device provider to the Purchaser, which encapsulates the biometric capture any user experience while capture (such as preview) and signing and encryption of biometrics, all within it.</p>
+<p>1.2	Unless the contrary can be inferred based on the intent of the Parties, the Definitions and Interpretation clauses of the Agreement and/or Purchase Order shall form part of these Terms and Conditions (to the extent applicable).</p>
+<p>2.TERM
+Subject to Clause 8 of these Terms and Conditions, all provisions of these Terms and Conditions, including obligations of the Device Provider, shall have full force and effect for a period of five (5) years from the date of execution of these Terms and Conditions.  </p>
+<p>3.	COVENANTS OF THE PARTIES</p>
+<p>3.1	Representations and Warranties of the Purchaser</p>
+<p>The Purchaser represents and warrants that:</p>
+<p>(a)	it has the legal right and authority, and will maintain the legal right and authority during the Term, to use the Deliverables;</p>
+<p>(b)	the execution, delivery and performance of these Terms and Conditions by the Purchaser, use of Deliverables and the covenants, agreements or undertakings of the Purchaser under these Terms and Conditions do not violate any Law, rule, regulation or order applicable to the Purchaser or violate or contravene the provisions of or constitute a default under any documents, contracts, agreements or any other instruments to which it is a party;</p>
+<p>(c)	these Terms and Conditions, when executed and delivered by the Purchaser shall constitute a valid and binding obligation enforceable qua the Purchaser in accordance with the terms hereof;</p>
+<p>(d)	It is not subject to any material injunction order, judgment or decree, which in any manner challenges or seeks to prevent, enjoin, alter or materially delay the transactions contemplated in these Terms and Conditions;
+</p>
+<p>(e)	There is no order of any Governmental Authority or any claims, investigations or proceedings before any Governmental Authority pending against the Purchaser, or to the best of the knowledge of the Purchaser, threatened in writing against or relating to the Purchaser, which would reasonably be expected to prevent the Purchaser from fulfilling its obligations in these Terms and Conditions;</p>
+<p>(f)	the Purchaser is authorized and has completed all required corporate actions necessary to execute the applicable Purchase Order.</p>
+<p>3.2	Representations and Warranties of the Device Provider</p>
+<p>The Device Provider represents and warrants that:</p>
+<p>(a)	it has the legal right and authority, and will maintain the legal right and authority during the Term, to provide the Deliverables ordered by the Purchaser;</p>
+<p>(b)	It is not subject to any material injunction order, judgment or decree, which in any manner challenges or seeks to prevent, enjoin, alter or materially delay the transactions contemplated in these Terms and Conditions;
+</p>
+
+<p>(c)	It has the right to suspend or withdraw the Deliverables under this Terms and Conditions upon explicit mandates or instructions from any competent authority; such as the UIDAI or any authority.</p>
+<p>4.	OBLIGATIONS OF THE PARTIES</p>
+<p>4.1	Obligations of the Purchaser</p>
+<p>(a)	The Purchaser shall use the devices purchased/RD services, solely for the purposes as mentioned in Annexure I of these terms and conditions.</p>
+<p>(b)	The purchaser shall ensure that all declared usage shall comply with the provisions of the Aadhaar Act and rules, regulations, notifications and circulars issued thereunder. </p>
+<p>(c)	The Purchaser shall declare the intended usage of devices/RD services addressed under Clause 4.1(a) (including the applications within which the device will be used) to the Device Provider at the time of purchase or at the time of migration to “Registered Device” framework for devices purchased earlier by the Purchaser. It shall be the sole responsibility of the Purchaser that the devices purchased/RD services as part of the Deliverables are used only for the purpose as addressed under Clause  and as declared in such form and only by such personnel of the Purchaser who are duly authorized for this purpose.</p>
+<p>(d)	In respect of existing Public Devices forming part of the Deliverables, the Purchaser shall:</p>
+<p>(i)	Appoint a Migration Management team with complete understanding of registered devices and necessary requirements of UIDAI in this respect;</p>
+<p>(ii)	Accept necessary upgrade software patch provided by Device Provider to enable the Purchaser to migrate such devices to L0 compliance level, which shall include a software patch comprising RD Services and Management Client features as per the specifications of UIDAI and any other related device software/firmware;</p>
+<p>(iii)	Appoint development team to make necessary changes and test the same within their application to use the RD Services &amp; Management Client and any other related device software/firmware;</p>
+<p>(iv)	Perform installation of client side RD Services / Management Client on all edge devices (desktops, laptops, tablets, smartphones, etc.) before the date mandated by UIDAI;</p>
+<p>(v)	Ensure that regular RD Services / Management Client patches are duly installed on all devices. Liabilities arising out of failure to do so shall solely be owned by Purchaser; and</p>
+<p>(vi)	Warrants that, in using the Aadhaar Registered Device Services extended by the Device provider /, the Purchaser is bound to follow the policies and guidelines established by the UIDAI for the usage of such services. Similar covenants shall apply to the Purchasers using the devices for the payment applications where the guidelines of National Payments Corporation of India (“NPCI”) shall additionally be in effect.</p>
+<p>(e)	In respect of new supplies of L0/L1 Registered devices forming part of the Deliverables, the Purchaser shall:</p>
+<p>(i)	Accept deliveries of the device and associated software and ensure correct implementation of the same within Purchaser environment;</p>
+<p>(ii)	Ensuring that the Purchaser applications adhere to all applicable standards, security features, etc. as laid down by UIDAI and the related acts / regulations;</p>
+<p>(iii)	Ensure timely update of any patches provided by Device Provider from time to time.</p>
+<p>(f)	In respect of existing Public Devices as well as new supplies of L0/L1 Registered devices forming part of the Deliverables:</p>
+<p>(i)	The device will be deployed in Purchaser environment or an environment controlled / influenced by Purchaser.</p>
+<p>(ii)	The Purchaser shall be responsible for maintaining the requisite level of security and related measures to prevent security breaches, including but not limited to preventing replay attacks, compromise of device keys, keeping the environment clean of rogue applications, malware, virus, security vulnerabilities (including known vulnerabilities to system software and / or any other applications directly or indirectly influencing the environment within which the device is being used) etc. which may either adversely affect the functioning of software / devices provided by device provider or which may try to hack / disrupt the functioning of such software / devices to cause a security breach. The same caveat(s) shall apply to any third parties such as Business Correspondents, Banking Agents, and Merchants etc, using the devices for AEPS / KYC and other/or any Aadhaar Authentications; for ample clarity – any third party using the devices procured under this agreement -on behalf of the purchaser shall be treated as purchaser itself. All compute devices and systems using the Aadhaar Services shall be treated as the customer system itself – all provisions under the section 4.1 obligations of the purchaser shall be in effect for the devices used by the purchaser contracted/ purchaser empanelled individuals and entities. The purchaser shall maintain adequate controls and systems in place to ensure the procured devices remain compliant to all provisions of this agreement irrespective of the end user.</p>
+<p>(iii)	The Purchaser will be solely responsible for all damages and liabilities, if any, resulting from such breaches and as assessed by all/any stakeholders including UIDAI, as specified under the Aadhaar Act and rules and regulations made thereunder.</p>
+<p>(g)	The Purchaser shall ensure that the Device Provider is not in violation of any of its obligations, mandatory or otherwise, specified by UIDAI under the Aadhaar Act, rules and regulations made thereunder, or circulars and notifications issued thereunder, and/ or by NPCI for payment applications; due to any of the fault, breach, commission, omission on the part of the Purchaser.</p>
+<p>(h)	The Purchaser shall ensure that all the updates, patches etc as provided by the Device Provider shall be installed in the devices, application, software, etc.</p>
+<p>(i)	Warrants to ensure that the end-point compute devices such as </p>
+<p>4.2	Obligations of the Device Provider </p>
+<p>(a)	The Device Provider shall regularly provide device management services to the Purchaser in respect of the registered devices forming part of the Deliverables. For this purpose, the Purchaser shall pay to the Device Provider as per Annexure II.  In respect of existing Public Devices forming part of the Deliverables, the Device Provider shall:</p>
+<p>(i)	Provide necessary upgrade software patch to enable the Purchaser to migrate such devices to L0 compliance level, which shall include a software patch comprising RD Services and Management Client features, and any other related device software/firmware, as per the specifications of UIDAI; </p>
+<p>(ii)	Provide regular patches of RD Services / Management Client to Purchaser as appropriate and necessary if an issue is detected in the provided software which is non-compliant to an existing specification. Further, the Device Provider shall keep the Management Server compliant to the specifications issued by UIDAI from time to time for the period of the agreement;</p>
+<p>(iii)	Host (either within its own or third party premises) the Management Server which will be responsible for device </p>
+registration / de-registration (including first time key injection) and regular key rotation during the Term of the Agreement.
+
+<p>(iv)	Be responsible, during the Term of the Agreement, for uptime and functioning of the Management Server as per UIDAI specifications. While one time migration upgrade patch may be offered free of charge, Management Server operations will be chargeable to the Purchaser at a mutually agreed price (either as part of the device price or a service charge per device per year).
+Alternately, the Purchaser upon mutual agreement with the Device Provider may choose to host the Management Server within their own environment in which case provisioning of all hardware / hosting environment, implementation of Management Server and regular maintenance / production support, etc. of the Management Server shall become the responsibility of the Purchaser, unless otherwise agreed to between both parties. The commercial terms of arrangements within this entire option will be mutually agreed between Device Provider and Purchaser.</p>
+
+<p>(v)	Make available a testing environment to Purchaser to help them perform pre-production testing of the changes such Purchasers make to their application and test such changes with the Management Server. For this purpose, the specifications for RD Service / Management Client can be obtained from UIDAI and shall also be made available to the Purchaser by the Device Provider.</p>
+
+<p>(b)	In respect of new supplies of L0/L1 devices forming part of the Deliverables, the Device Provider shall:</p>
+
+<p>(i)	Supply L0/L1 compliant devices,  and also provide associated software including RD Service / Management Client and access to either Device Provider-hosted Management Server or provide Management Server software to the Purchaser to be hosted within the Purchaser environment on mutually agreeable terms</p>
+<p>(ii)	Be responsible for supplying L1 devices or an L0 variant of the device which can host the keys in device hardware based keystore. The Management Server will enable device registration / de-registration and regular key rotation as per the defined policy;</p>
+<p>(iii)	Provide support for one-time testing of Purchaser application integration with client and server software if the device has not been previously integrated within Purchaser application on mutually agreeable terms;
+<p>(iv)	Provide regular patches of RD Services / Management Client to Purchaser as appropriate and necessary either due to a change in the specifications from UIDAI or if an issue is detected in the provided software which is non-compliant to an existing specification. Further, the Device Provider will keep the Management Server compliant with the specifications issued by UIDAI from time to time for the period of the Agreement.</p>
+
+<p>(c)	In respect of existing Public Devices as well as new supplies of L0/L1 devices forming part of the Deliverables: </p>
+
+<p>(i)	Device Provider shall be responsible to provide devices and associated software described above as per the specifications issued by UIDAI which will be STQC certified. While the Device Provider will make all reasonable efforts to ensure that all security standards specified by UIDAI are met to prevent breaches such as replay attack and key compromise, the Device Provider shall be liable only for damages, if any, if it is established that such breaches have been caused due to an intentional breach on the part of Device Provider or due tro non compliance of the devices and associated components to the existing standards.</p>
+
+<p>(ii)	The device will be deployed in Purchaser environment or an environment controlled / influenced by Purchaser. The Purchaser shall be responsible for maintaining the requisite level of security and related measures to prevent security breaches, including but not limited to preventing replay attacks, compromise of device keys, keeping the environment clean of rogue applications, malware, virus etc which may either adversely affect the functioning of software provided by device provider or which may try to hack / disrupt the functioning of such software to cause a security breach. </p>
+<p>(iii)	Notwithstanding anything written to the contrary, Purchaser shall ensure that all the Updates, patches etc provided by the Device Provider shall be installed without any failure or delay. Any delay/failure on the part of Purchaser shall make Purchaser liable for all the consequences arising out of it.   </p>
+<p>5.	Exclusion of Liability</p>
+
+<p>The Device Provider’s responsibilities under these Terms and Conditions extend only to Deliverables supplied directly to the Purchaser, and the Device Provider is not liable for any subsequent transactions involving such Deliverables, or any direct or indirect issues arising out of it.</p>
+<p>6.	Indemnity</p>
+<p>The Purchaser undertakes to indemnify, defend and hold harmless the Device Provider and its directors, officers, employees, representatives, agents and Affiliates (“Indemnified Party”) to the fullest extent from and against any and all claims, actions, losses, damages, penalties, liabilities, costs, charges, expenses, suits, or proceedings of whatever nature made, suffered or incurred, including, any legal or other fees and expenses actually incurred in connection with investigating, disputing, preparing or defending any action or claim, but excluding any consequential losses or loss of profit, (“Losses”), resulting from, arising out of or in connection with the Deliverables.</p>
+<p>7.	Order of Precedence</p>
+<p>(a)	In the event of any conflict between any provision of these Terms and Conditions, the Purchase Order and the Master Purchase Agreement, (if any), then only to the extent that such conflict or inconsistency cannot be resolved, the following order of precedence shall prevail to the extent necessary to resolve such conflict or inconsistency: </p>
+<p>(i)	the Terms and Conditions;</p>
+<p>(ii)	Purchase order </p>
+<p>(iii)	the Master Purchase Agreement (if any)</p>
+
+<p>(b)	In the event of any conflict or inconsistency between any provision of any document forming part of these Terms and Conditions, all rights conferred on the Device Provider under these Terms and Conditions with respect to any matter or event shall be additional to the rights conferred on the Device Provider under any other agreement with the Purchaser with respect to that matter or event.</p>
+<p>8.	Survival</p>
+<p>The provisions contained in Clauses 2 (Term), 5 (Exclusion of Liability), 6 (Indemnity), and 10 (Dispute Resolution) shall survive any expiry/ termination of these Terms and Conditions.</p>
+<p>9.	Amendment</p>
+<p>These terms and conditions may be amended by the Device Provider from time to time, as per its sole discreation and in order to comply with the directions, circulars, notifications etc issued by UIDAI or any other concerned authority.</p>
+
+<p>10.	Dispute Resolution</p>
+<p>For any dispute arising out of these terms and conditions including but not limited to interpretation, applicability etc. parties will try to resolve it amicably. However, if Parties failed to resolve it amicably within 30 days, the same may be referred to sole arbitrator appointed by the Device Provider. The arbitration proceedings shall be goverened by Arbitration and Conciliation Act, 1996. The proceedings shall be conducted in English language. The award passed by the arbitrator shall be final and binding on the parties.</p>
+
+<p>11.	Compliance of applicable law</p>
+<p>Parties agree that they will comply with all the respective applicable laws at all the time during the subsistence of these terms and conditions.</p>
+
+<p>12.	Audit</p>
+<p>Device Provider shall have the right, at any time during the term hereof, during Purchaser’s working hours, to perform or have performed an audit at Purchaser’s premises where RD services is used, to verify compliance by Purchaser with the terms and conditions of these Terms and conditions.  Device provider may also require Purchaser to submit a periodical report of the same for Device Provider’s review. Purchaser understood that such review by Device Provider shall in no event relieve Purchaser from its obligations hereunder and shall in no event be deemed a validation, certification, warranty or other confirmation that the Purchaser is under obligation to discharge with.</p>
+
+<p>13.	Governing Law and Jurisdiction </p>
+<p>These Terms and conditions shall be governed and construed in accordance with the laws of India and shall be subject to the jurisdiction of courts at Noida.</p>
+
+<p>14.	Force Majeure</p>
+<p>No Party shall be liable for non-performance or delay in performance of any obligation stipulated in these Terms and Conditions if such non-performance or delay is caused by an event of Force Majeure.  The Party affected shall give prompt notice (together with any notice or information it has received regarding the Force Majeure event) to the other Party advising of the occurrence and effects of the event of Force Majeure and shall use all reasonable efforts to minimize any adverse consequences resulting from the event of Force Majeure. Neither party shall be entitled for any damages caused due to Force majeure, if the contract terminated on the ground of Force Majeure. </p>
+
+
+             </div>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> 
+<script type="text/javascript" src="js/jquery-migrate-1.4.1.js"></script> 
+<script type="text/javascript" src="js/popper.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/mdb.min.js"></script> 
+<script type="text/javascript" src="js/compiled.min.js"></script> 
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/quantity.js"></script> 
+
+
+<script type="text/javascript" src="js/new-plugins/forms/selects/select2.min.js"></script>
+<script type="text/javascript" src="js/new-plugins/uploader_bootstrap.js"></script>
+<script type="text/javascript" src="js/new-plugins/uploaders/fileinput.min.js"></script>
+<script type="text/javascript" src="js/new-plugins/enscroll-0.6.2.min.js"></script>
+<script type="text/javascript" src="js/new-plugins/forms/alidation/validate.min.js"></script>
+<script type="text/javascript" src="js/new-plugins/forms/styling/uniform.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('#menu-show').click(function(event){
+        event.stopPropagation();
+        $( "#mySidenav" ).show().addClass("animated slideInRight");
+		$( "#mySidenav" ).removeClass("slideOutRight");
+		$( "#sidenav-overlay" ).show();
+    });
+	
+	$('#close-nav').click(function(event){
+        event.stopPropagation();
+        $( "#mySidenav" ).addClass("slideOutRight");
+		$( "#sidenav-overlay" ).hide();
+		
+    });
+
+
+
+$(document).click(function(e){
+    var targetbox = $('#mySidenav');
+    if(!targetbox.is(e.target) && targetbox.has(e.target).length === 0){
+       $( "#mySidenav" ).addClass("animated slideOutRight");
+		$('#sidenav-overlay').hide();
+    }
+});
+</script> 
+
+</body>
+</html>

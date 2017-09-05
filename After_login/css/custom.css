@@ -1,0 +1,611 @@
+
+
+/*----NEW CSS ----*/
+
+.wizard > .steps {
+	margin-bottom: 30px;
+}
+.rtabs {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.rtabs input[type="radio"] {
+	display: none;
+}
+.rtabs input[type="radio"] + label {
+	border: 1px solid #3d64ad;
+	color: #3d64ad;
+	width: 276px;
+	text-align: center;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 300;
+	display: inline-block;
+	margin: 0 0 0 -4px;
+	cursor: pointer
+}
+.rtabs input[type="radio"]:first-child + label {
+	border-radius: 4px 0 0 4px;
+}
+.rtabs #SignupAadhaar + label {
+	border-radius: 0 4px 4px 0;
+}
+.rtabs input[type="radio"]:checked + label {
+	background: #3d64ad;
+	color: #fff;
+}
+.custom-check input[type="checkbox"] {
+	display: none;
+}
+.custom-check input[type="checkbox"] + label {
+	position: relative;
+	padding-left: 24px;
+	margin-bottom: 10px
+}
+.custom-check input[type="checkbox"] + label:before {
+	position: absolute;
+	top: -2px;
+	left: 0;
+	font-family: FontAwesome;
+	content: "\f096";
+	color: #3d64ad;
+	font-size: 20px;
+}
+.custom-check input[type="checkbox"]:checked + label:before {
+	content: "\f14a";
+}
+.rbox {
+	-webkit-box-shadow: 0 0 4px #999;
+	-moz-box-shadow: 0 0 4px #999;
+	box-shadow: 0 0 4px #999;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 50px;
+}
+.custom-label {font-size:18px !important;}
+.custom-input {
+	width: auto;
+	margin: 10px auto;
+	font-size: 18px !important;
+	text-align: center;
+	height: auto;
+}
+.rbox .btn-primary, .rbox .btn-secondary {
+	font-size: 18px;
+}
+.rbox label {
+	color: #202020;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 6px;
+}
+.rbox label span {
+	color: #f00;
+}
+.sub-heading {color:#3D64AD;font-size:16px;}
+.radio-button {
+	float: left;
+	padding-left: 10px;
+	position: relative;
+	margin-bottom: 20px;
+	margin-right: 10px;
+}
+.wizard > .actions {
+	padding-top: 20px; padding-bottom: 0;
+}
+.btn-primary {
+	background: #3d64ad;
+	border-color: #3d64ad;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+.btn-primary:focus, .btn-primary.focus, .btn-primary:hover {
+	background: #042e6f;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	-webkit-transition: all .5s;
+	transition: all .5s
+}
+.btn-secondary {
+	border: 1px solid #3d64ad;
+/*	background: #fff;*/
+	color: #3d64ad;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+.btn-secondary:focus, .btn-secondary.focus, .btn-secondary:hover {
+	background: #eee;
+	color: #3d64ad;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	-webkit-transition: all .5s;
+	transition: all .5s
+}
+.wizard>.steps>ul>li.current .number {
+	border-color: #3d64ad;
+	color: #3d64ad
+}
+.wizard>.steps>ul>li.done .number {
+	border-color: #3d64ad;
+	color: #fff;
+	background: #3d64ad
+}
+.wizard>.steps>ul>li:before, .wizard>.steps>ul>li:after {
+	background-color: #3d64ad;
+	top: 40px
+}
+.wizard .actions ul li {
+	float: right
+}
+.wizard .actions ul li a {
+	background: #3d64ad;
+	padding: 8px 20px;
+	border: 1px solid #3d64ad;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.wizard .actions ul li:first-child {
+	float: left
+}
+.wizard .actions ul li:first-child a {
+	border: 1px solid #3d64ad;
+	font-size: 18px;
+	font-weight: 400;
+	background: #fff;
+	color: #3d64ad
+}
+.wizard .actions ul li:first-child a:hover {
+	color: #052e70
+}
+
+
+
+input[type=radio] {
+	position: absolute;
+	visibility: hidden
+}
+.radio-button label {
+	display: block;
+	position: relative;
+	font-size: 14px;
+	padding: 5px 0px 0px 27px;
+	margin: 4px auto;
+	z-index: 9;
+	cursor: pointer;
+	-webkit-transition: all 0.25s linear
+}
+.padding-zero {
+	padding-left: 0px
+}
+.check {
+	display: block;
+	position: absolute;
+	border: 2px solid #bcbcbc;
+	border-radius: 100%;
+	height: 20px;
+	width: 20px;
+	top: 10px;
+	left: 10px;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear
+}
+.check {
+	border: 2px solid #bcbcbc
+}
+.check::before {
+	display: block;
+	position: absolute;
+	content: '';
+	border-radius: 100%;
+	height: 8px;
+	width: 8px;
+	top: 4px;
+	left: 4px;
+	margin: auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear
+}
+input[type=radio]:checked ~ .check {
+	border: 2px solid #3d64ad
+}
+input[type=radio]:checked ~ .check::before {
+	background: #3d64ad
+}
+input[type=radio]:checked ~ label {
+	color: #666666
+}
+#SendOTP, #SendOTP1{ margin-bottom: 10px;}
+
+.select2-search{ display: none;}
+#aadhaar-number .custom-input{ width:100px; display: inline-block; margin:10px 4px;}
+.success-page{ font-size:24px; padding:50px 100px;}
+.success-page img{ margin-bottom: 20px;}
+
+
+.table.review-cart{ border:1px solid #ccc; border-radius: 4px;}
+.table.review-cart thead{ background: #f7f7f7;}
+.table.review-cart > thead > tr > th{ border-bottom: 1px solid #ccc; padding: 10px 16px; color:#999;}
+.table.review-cart tr td{ padding: 20px;}
+.table.review-cart .txt-img {
+    list-style: outside none none;
+    padding-left: 0px; margin: 0
+}
+.table.review-cart .txt-img li {
+    display: inline-block; float: left;
+}
+.table.review-cart .txt-img .img-box{ border: 1px solid #ccc;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    width: 80px; margin-right: 20px;}
+.table.review-cart .txt-img .img-box img{  bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;}
+.Series {
+    font-size: 16px;
+}
+.new-btn-remove {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    color: #999;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 0;
+}
+.new-btn-remove:hover{ color:#3d64ad;
+}
+.input-group.quantity{ max-width:120px;}
+.btn-number{ padding: 4px 10px; height: 30px; font-size: 10px; font-weight: 400;}
+.input-number{  height: 30px;
+    padding: 2px 10px;
+    text-align: center;}
+.table.review-cart .small-text{ font-size: 85%; color: #999;}
+.table.review-cart .custom-check{ max-width: none;}
+.total.cost {
+    font-size: 18px;
+    font-weight: bold;
+}
+#promo-code, #promo-code1 {
+    display: inline;
+    font-size: 13px;
+    height: 30px;
+    margin-left: 10px;
+    text-align: left;
+    width: 120px;
+}
+.edit-add{font-size: 12px;}
+.adrs td{ font-size: 16px; background: #f7f7f7; border: 0 none !important; padding: 30px !important}
+.adrs span {
+    color: #999;
+    font-size: 14px;
+}
+
+.continue-shop_01{background: #fff none repeat scroll 0 0;
+    border: 1px solid #3d64ad;
+    color: #3d64ad;
+    font-size: 18px;
+    font-weight: 400;}
+
+/*-- 7/27/2017--*/
+
+.product-detail h3{ margin-top: 0; }
+
+
+
+
+
+/*---tabs---*/
+ 
+
+
+.tabs-wrap.step-form .tab-content .tab-pane {
+	padding: 20px 0 0;
+	position: relative;
+	float: left;
+	width: 100%;
+	border: 1px solid #ddd;
+	border-radius: 0 0 4px 4px;
+}
+.tabs-wrap.step-form .tab-content .tab-pane .tab-body {
+	padding: 0 20px;
+	min-height: 150px;
+}
+.tabs-wrap.step-form .nav-tabs {
+	border: 1px solid #ddd;
+	border-bottom: 0;
+	border-radius:4px 4px 0 0;
+}
+.tabs-wrap.step-form .nav-tabs > li {
+	display: block;
+	margin: 0;
+	float: left;
+}
+.tabs-wrap.step-form .nav-tabs > li.active > a, .tabs-wrap.step-form .nav-tabs > li.active > a:focus {
+	color: #337ab7;
+	background: #f1f6fc;
+	cursor: text;
+	border: none;
+}
+.tabs-wrap.step-form .nav-tabs > li.active > a:after {
+	border-left: 25px solid #f1f6fc;
+}
+.tabs-wrap.step-form .number {
+	position: relative;
+	float: left;
+	text-align: center;
+	border-radius: 3px;
+	padding: 0 4px;
+	margin-bottom: 0;
+	margin-right: 4px;
+	background: #b5b5b5;
+	color: #fff;
+}
+.tabs-wrap.step-form .nav-tabs > li.active .number {
+	background: #337ab7;
+	color: #fff;
+}
+.tabs-wrap.step-form .nav > li > a {
+	background: #fff none repeat scroll 0 0;
+	color: #666;
+	display: block;
+	float: left;
+	padding: 14px 0 14px 35px;
+	position: relative;
+	text-decoration: none;
+	border: none;
+}
+.tabs-wrap.step-form .nav > li > a:hover {
+	border: none;
+}
+.tabs-wrap.step-form .nav > li > a:before {
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	border-left: 25px solid #ccc;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	margin-left: 1px;
+	left: 100%;
+	z-index: 1;
+}
+.tabs-wrap.step-form .nav > li > a:after {
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 25px solid transparent;
+	border-left: 25px solid #fff;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	left: 100%;
+	z-index: 2;
+}
+.tabs-wrap.step-form .nav > li:first-child a {
+	padding-left: 10px;
+}
+.tabs-wrap.step-form label {
+	font-size: 14px;
+	color: #202020;
+	font-weight: normal;
+}
+.tabs-wrap.step-form .alert {
+	padding: 10px;
+	border-radius: 0;
+	text-align: center
+}
+.tabs-wrap.step-form img {
+	max-width: 100%
+}
+.tabs-wrap.step-form .otp {
+	width: 120px;
+}
+.aadhar-n {
+	margin-right: 10px;
+	width: 90px;
+	display: inline-block;
+	text-align: center;
+	/*height: 44px !important;*/
+	padding: 6px !important;
+}
+.aadhar-n:last-child{ margin-right: 0}
+.tab-footer {
+	width: 100%;
+	margin-top: 15px;
+	float: left;
+	border-top: 1px solid #ddd;
+	padding: 15px 0;
+}
+.tab-footer .tf-left {
+	float: left;
+}
+.tab-footer .tf-right {
+	float: right;
+}
+.tab-footer .continue {
+	background-color: #0067AC;
+	border: 1px solid #0067AC;
+	color: #fff;
+/*	border-radius: 0;
+*/	font-size: 16px;
+	padding: 6px 15px;
+}
+.tab-footer .continue i {
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	text-align: center;
+	line-height: 19px;
+	margin-left: 4px;
+	font-size: 18px;
+}
+.tab-footer .back {
+	background: #fff;
+	color: #0067AC;
+	border: 1px solid #0067AC;
+/*	border-radius: 0;
+*/	font-size: 16px;
+	padding: 6px 15px;
+	margin-right: 4px;
+}
+.tab-footer .back i {
+	border: 1px solid #0067AC;
+	border-radius: 50%;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	text-align: center;
+	line-height: 19px;
+	margin-right: 4px;
+	font-size: 18px;
+}
+.tab-footer .cancel-process i {
+	border: 1px solid #0067AC;
+	border-radius: 50%;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	text-align: center;
+	line-height: 19px;
+	margin-right: 4px;
+	font-size: 14px;
+	color: #0067AC
+}
+.tab-footer .cancel-process {
+	font-size: 16px;
+	display: block;
+	margin-top: 10px;
+	font-weight: 500;
+	color: #0067AC
+}
+.tab-footer .cancel-process:hover {
+	text-decoration: none;
+}
+.stepsform .nav-tabs {
+	border-bottom: 0;
+	margin-bottom: 30px;
+}
+.stepsform .nav-tabs li {
+	width: 25%;
+}
+
+
+/* one item */
+.stepsform .nav-tabs li:first-child:nth-last-child(1) {
+  width: 100%;
+}
+
+/* two items */
+.stepsform .nav-tabs li:first-child:nth-last-child(2),
+li:first-child:nth-last-child(2) ~ li {
+  width: 50%;
+}
+
+/* three items */
+.stepsform .nav-tabs li:first-child:nth-last-child(3),
+li:first-child:nth-last-child(3) ~ li {
+  width: 33.3333%;
+}
+
+/* four items */
+.stepsform .nav-tabs li:first-child:nth-last-child(4),
+li:first-child:nth-last-child(4) ~ li {
+  width: 25%;
+}
+
+/* five items */
+.stepsform .nav-tabs li:first-child:nth-last-child(5),
+li:first-child:nth-last-child(5) ~ li {
+  width: 20%;
+}
+
+
+
+.stepsform .nav-tabs li a {
+	text-align: center;
+	border: 0;
+	margin: 0;
+	color: #999;
+	cursor: default;
+	padding: 0;
+	
+}
+.stepsform .nav-tabs li a span {
+	display: block;
+}
+.stepsform .nav-tabs li i {
+	border: 2px solid #ddd;
+	border-radius: 50%;
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	width: 36px;
+	background: #fff;
+	position: relative;
+	z-index: 1;
+	font-style: normal;
+	display: inline-block;
+}
+
+.stepsform .nav-tabs li.active i{}
+
+.stepsform .nav.nav-tabs > li a::after {
+	background: #ddd none repeat scroll 0 0;
+	content: "";
+	height: 2px;
+	position: absolute;
+	top: 18px;
+	width: 100%;
+	z-index: 0;
+
+}
+.stepsform .nav.nav-tabs > li:first-child a::after {
+	border-radius: 2px 0 0 2px;
+}
+.stepsform .nav.nav-tabs > li:last-child a::after {
+	border-radius: 0 2px 2px 0;
+}
+.stepsform .nav-tabs > li.active > a, .stepsform .nav-tabs > li.active > a:focus, .stepsform .nav-tabs > li.active > a:hover, .stepsform .nav > li > a:focus, .stepsform .nav > li > a:hover {
+	border: 0;
+	background: none;
+}
+.stepsform .nav.nav-tabs > li.active a {
+	color: #0056a0
+}
+.stepsform .nav.nav-tabs > li.active a i {
+	border: 2px solid #0056a0
+}
+.stepsform .nav.nav-tabs > li.active a::after {
+	background: #0056a0;
+}
+.stepsform .nav.nav-tabs > li.done a {
+	color: #2cb352
+}
+.stepsform .nav.nav-tabs > li.done a i {
+	border: 2px solid #2cb352
+}
+.stepsform .nav.nav-tabs > li.done a::after {
+	background: #2cb352;
+}
+
+.stepsform .nav.nav-tabs > li:first-child a::after {
+	right:0;width: 50%;
+}
+.stepsform .nav.nav-tabs > li:nth-child(2) a::after{left:0}
+.stepsform .nav.nav-tabs > li:nth-child(3) a::after{left:0}
+.stepsform .nav.nav-tabs > li:last-child a::after {
+	left: 0;width: 50%;
+}
